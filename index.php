@@ -45,6 +45,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
         <!-- Google Cloud Platform -->
+        <meta name="google-signin-client_id" content="284757123820-35aq2ncldsigfic24aforqculbssn8bm.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         
         <!-- Facebook SDK -->
