@@ -44,8 +44,15 @@
         <!-- jQuery CDN -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
+        <!-- Google Cloud Platform -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <!-- Facebook SDK -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=404228607028267&autoLogAppEvents=1"></script>
+        
         <!-- JavaScript -->
         <script src="client/js/main.js"></script>
+        <script src="client/js/login.js"></script>
         
     </head>
     
@@ -53,6 +60,70 @@
         
         <!-- Login Screen -->
         <section class="login" id="login-page">
+            
+            <form class="login__form">
+            
+                <!-- Enter Email or Sign In With Google -->
+                <div class="login__slide login__slide--email">
+
+                    <h1 class="login__title">Welcome To Dash</h1>
+
+                    <h2 class="login__subtitle">Enter Your Email To Get Started</h2>
+
+                    <!-- Email Address -->
+                    <input type="email" name="email" placeholder="me@example.com" class="login__input">
+
+                    <!-- Validation Error -->
+                    <p id="email-error"></p>
+
+                    <!-- Move To Next Slide -->
+                    <button class="login-form__next">Next</button>
+
+                    <h2 class="login-form__slide-or">Or</h2>
+
+                    <!-- Social Media Login Buttons -->
+                    <div class="login-buttons">
+
+                        <!-- Google Login Buttons -->
+                        <div class="login-buttons__button login-buttons__google">
+
+                            <div class="g-signin2" data-onsuccess="onGoogleSignIn" data-width="250" data-height="40" data-theme="dark" data-longtitle="true"></div>
+
+                        </div>
+
+                        <!-- Facebook Login Buttons -->
+                        <div class="login-buttons__button login-buttons__facebook">
+
+                            <div class="fb-login-button" data-width="250" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true" onlogin="checkLoginState();"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Enter Your Password To Login -->
+                <div class="login__slide login__slide--password">
+
+                </div>
+                
+                <!-- Enter Your Name -->
+                <div class="login__slide login__slide--create">
+
+                </div>
+                
+                <!-- Enter and Comfirm a Password -->
+                <div class="login__slide login__slide--confirm">
+
+                </div>
+                
+                <!-- Link Your Google of Facebook Account -->
+                <div class="login__slide login__slide--link">
+
+                </div>
+
+            </form>
+            
         </section>
         
         <!-- Setup Page -->
