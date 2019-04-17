@@ -114,4 +114,16 @@ $quote = array(
     "He who has a why to live can bear almost any how. - Friedrich Nietzsche",
     "Adversity introduces a man to himself. - Author Unknown",
     );
+$meme = array(
+    '<img src="https://www.todaysparent.com/wp-content/uploads/2017/06/when-your-kid-becomes-a-meme-1024x576-1497986561.jpg">',
+    '<img src="https://www.sanfranciscobaycoffee.com/wp-content/uploads/2017/03/52279468.jpg">',
+    '<img src="https://www.sanfranciscobaycoffee.com/wp-content/uploads/2017/03/52279468.jpg">',
+    '<img src="https://winkgo.com/wp-content/uploads/2017/09/49-Funny-School-Memes-Not-Everyone-Likes-School-04-720x720.jpg">',
+    '<img "https://sayingimages.com/wp-content/uploads/You-Go-To-School-Nothing-Happens-You-Miss-One-Day.jpg">',
+    '<img src="http://cdn.funnyand.com/wp-content/uploads/2014/11/How-school-is-760x500.jpg">',
+    '<img src="https://cdn.ebaumsworld.com/mediaFiles/picture/2435386/85110909.jpg">',
+    '<img src="https://cms.qz.com/wp-content/uploads/2018/07/meme-featured.jpg?quality=75&strip=all&w=2200&h=1156">',
+    '<img src="https://www.lifewire.com/thmb/tC2SwC8VrNs6phoq5ckHevzFP9w=/395x397/filters:fill(auto,1)/meme-baby1-580700253df78cbc28b1b442.PNG">',
+    '<img src="https://i.kym-cdn.com/photos/images/newsfeed/000/999/687/5e1.png">',
+);
 ?>
