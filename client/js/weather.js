@@ -1,5 +1,3 @@
-<script>
-
   $(document).ready(function(){
     $.ajax({
       url:"https://api.openweathermap.org/data/2.5/find?q=orlando&units=imperial&APPID=a287ec139e178c4da981c95590c41a12",
@@ -56,6 +54,3 @@
     })
   })
 
-
-
-</script>
