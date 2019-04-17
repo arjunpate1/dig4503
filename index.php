@@ -54,6 +54,7 @@
         <!-- JavaScript -->
         <script src="client/js/main.js"></script>
         <script src="client/js/login.js"></script>
+        <script src="client/js/weather.js"></script>
 
     </head>
 
