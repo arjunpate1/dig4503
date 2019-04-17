@@ -1,7 +1,10 @@
-var clientID = '686972454904-nnmtv252sf2nmrnqc62vptrfdg4vhp89.apps.googleusercontent.com';
-var clientSecret = 'yQm-QHwz_hFTcdhNDCUwRlFC';
-var facebookID = '2300906400150612';
+//var clientID = '686972454904-nnmtv252sf2nmrnqc62vptrfdg4vhp89.apps.googleusercontent.com';
+//var clientSecret = 'yQm-QHwz_hFTcdhNDCUwRlFC';
+//var facebookID = '2300906400150612';
 
+var clientID = '284757123820-35aq2ncldsigfic24aforqculbssn8bm.apps.googleusercontent.com';
+var clientSecret = 'riZVNRB9XOsHBmvEPzqMADlW';
+var facebookID = '404228607028267';
 
 var userInfo = {
     firstName: undefined,

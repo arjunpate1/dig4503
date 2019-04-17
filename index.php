@@ -62,72 +62,86 @@
 
         <!-- Login Screen -->
         <section class="login" id="login-page">
+            
+            <form class="login-form">
+                     
+                <!-- Intro Slide -->
+                <div class="login-form__slide" id="lsa">
+                        
+                    <h1 class="login-form__slide-title">Hi There!</h1>
 
-            <form class="login__form">
+                </div>
+                     
+                <!-- Slide 1 -->
+                <div class="login-form__slide" id="ls1">
+                        
+                    <h1 class="login-form__slide-title">Welcome to <span>N3XT</span>WEB</h1>
 
-                <!-- Enter Email or Sign In With Google -->
-                <div class="login__slide login__slide--email">
-
-                    <h1 class="login__title">Welcome To Dash</h1>
-
-                    <h2 class="login__subtitle">Enter Your Email To Get Started</h2>
-
-                    <!-- Email Address -->
-                    <input type="email" name="email" placeholder="me@example.com" class="login__input">
-
-                    <!-- Validation Error -->
-                    <p id="email-error"></p>
-
-                    <!-- Move To Next Slide -->
+                    <h2 class="login-form__slide-subtitle">Enter Your Email To Get Started</h2>
+                    <input type="email" name="email" placeholder="me@example.com">
+                    <p id="email_error"></p>
                     <button class="login-form__next">Next</button>
-
                     <h2 class="login-form__slide-or">Or</h2>
 
-                    <!-- Social Media Login Buttons -->
                     <div class="login-buttons">
 
-                        <!-- Google Login Buttons -->
                         <div class="login-buttons__button login-buttons__google">
-
                             <div class="g-signin2" data-onsuccess="onGoogleSignIn" data-width="250" data-height="40" data-theme="dark" data-longtitle="true"></div>
-
                         </div>
 
-                        <!-- Facebook Login Buttons -->
                         <div class="login-buttons__button login-buttons__facebook">
-
                             <div class="fb-login-button" data-width="250" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true" onlogin="checkLoginState();"></div>
-
-                        </div>
+                            </div>
 
                     </div>
 
                 </div>
 
-                <!-- Enter Your Password To Login -->
-                <div class="login__slide login__slide--password">
-                    
-                    
-
+                <!-- Slide 2 -->
+                <div class="login-form__slide" id="ls2">
+                    <h1 class="login-form__slide-title">Looks like you don't have an account yet</h1>
+                    <h2 class="login-form__slide-subtitle">Enter Your name to get started</h2>
+                    <input type="email" name="confirm_email" placeholder="email address">
+                    <p id="confirm_email_error"></p>
+                        <input type="text" name="first_name" placeholder="First Name">
+                    <p id="first_name_error"></p>
+                    <input type="text" name="last_name" placeholder="Last Name">
+                    <p id="last_name_error"></p>
+                    <button class="login-form__next">Next</button>
                 </div>
 
-                <!-- Enter Your Name -->
-                <div class="login__slide login__slide--create">
-
+                <!-- Slide 2B -->
+                <div class="login-form__slide" id="ls2b">
+                    <h1 class="login-form__slide-title">Welcome Back</h1>
+                    <h2 class="login-form__slide-subtitle">Enter Your Password</h2>
+                    <input type="password" name="password" placeholder="password">
+                    <p id="password_error"></p>
+                    <button class="login-form__submit">Sign In</button>
                 </div>
 
-                <!-- Enter and Comfirm a Password -->
-                <div class="login__slide login__slide--confirm">
-
+                <!-- Slide 3 -->
+                <div class="login-form__slide" id="ls3">
+                    <h1 class="login-form__slide-title">Almost Done!</h1>
+                    <h2 class="login-form__slide-subtitle">Create a Password</h2>
+                    <input type="password" name="new_password" placeholder="password">
+                    <p id="new_password_error"></p>
+                    <input type="password" name="confirm_new_password" placeholder="confirm password">
+                    <p id="confirm_new_password_error"></p>
+                    <button type="submit" class="login-form__submit">Create Account</button>
                 </div>
-
-                <!-- Link Your Google of Facebook Account -->
-                <div class="login__slide login__slide--link">
-
+                     
+                     <!-- Slide 4 -->
+                <div class="login-form__slide" id="ls4">
+                    <h1 class="login-form__slide-title-alt">Looks Like You Already Have An Account!</h1>
+                    <h2 class="login-form__slide-subtitle" id="whichaccount"></h2>
+                        
+                    <input type="password" name="link-password" placeholder="enter your password">
+                    <p id="link-password_error"></p>
+                    <button type="submit" class="login-form__submit">Confirm</button>
                 </div>
-
+                     
             </form>
-
+          
         </section>
 
         <!-- Setup Page -->
