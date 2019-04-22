@@ -1,14 +1,12 @@
-.login {
+.login-portal {
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 100vh;
-    width: 100vw;
     
     @include respond(tab-port) {
         grid-template-columns: auto;
     }
     
-    &__pane {
+    &__login {
         display: flex;
         height: 100vh;
         justify-content: center;
@@ -135,8 +133,7 @@
     
     &__background {
         height:100vh;
-        //background-image: url(../img/login-bg.jpg);
-        background-color: $primary;
+        background-image: url(../img/login-bg.jpg);
         
         @include respond(tab-port) {
             display: none;
