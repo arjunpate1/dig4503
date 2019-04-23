@@ -30,7 +30,7 @@ function changeSetupSlide(direction) {
         
         $(".setup__slide--" + setupSlide).fadeIn(500);
         
-        $(".setup__progress-bar--inner").css("width", "calc(" + (20 * setupSlide) + "%)");
+        $(".setup__progress-bar--inner").css("width", "calc(" + (16.66 * setupSlide) + "%)");
         
     }, 500);
     
