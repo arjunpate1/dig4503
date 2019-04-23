@@ -1,4 +1,9 @@
-var setupSlide = 1;
+var setupSlide = 1,
+    setupValues = {
+        birthday: undefined,
+        location: undefined,
+        
+    };
 
 function changeSetupSlide(direction) {
     
@@ -24,6 +29,8 @@ function changeSetupSlide(direction) {
         console.log("next slide " + setupSlide);
         
         $(".setup__slide--" + setupSlide).fadeIn(500);
+        
+        $(".setup__progress-bar--inner").css("width", "calc(" + (20 * setupSlide) + "%)");
         
     }, 500);
     
