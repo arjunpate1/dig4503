@@ -1,0 +1,75 @@
+.setup {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    background-color: $white;
+    //transform: translateX(100vw);
+    transition: all 1.3s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    
+    &__progress-bar {
+        
+        // Progress Bar Styles Go Here
+        height: 1rem;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        &--inner {
+            
+            // Inner Style Goes Here
+            height: 100%;
+            width: 20%;
+            background-color: $primary-dk;
+            
+        }
+        
+    }
+    
+    &__slide {
+        
+        // Generic Slide Styles Go Here
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        position: absolute;
+        
+        &--1 {
+            
+            // Slide 1 Styles
+
+        }
+        
+        &--2 {
+            
+            // Slide 2 Styles
+            display: none;
+            
+        }
+        
+        &--3 {
+            
+            // Slide 3 Styles
+            display: none;
+            
+        }
+        
+        &--4 {
+            
+            // Slide 4 Styles
+            display: none;
+            
+        }
+        
+        &--5 {
+            
+            // Slide 5 Styles
+            display: none;
+            
+        }
+        
+    }
+    
+}
