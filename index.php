@@ -50,10 +50,45 @@
 
   <!-- Facebook SDK -->
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=404228607028267&autoLogAppEvents=1"></script>
+    
+    <!--Preload JS -->
+    <script src="client/js/preload.js"></script>
 
 </head>
 
 <body>
+    
+    <!-- PRELOADER -->
+        <section class="preload">
+            <div class="preload__container nocursor" id="preloader-content">
+                <div class="n3xt-loader">
+                    <h2>D</h2>
+                    <h2>A</h2>
+                    <h2>S</h2>
+                    <h2>H</h2>
+                </div>
+            </div>
+            
+            <noscript>
+                <h3>Due to the interactive nature of this site, JavaScript is <span>required.</span> Please enable JavaScript or use a modern web browser to continue.</h3>
+            </noscript>
+            
+            <div class="preload__bar">
+                <span class="preload__bar-inner"></span>
+            </div>
+            
+        </section>
+        
+        <script>
+            
+            if (visitedPage) {
+                $(".preload__container").css("display", "none");
+                $(".preload__bar").css("display", "none");
+            }
+            
+            $(".preload__bar-inner").animate({width: "100%"}, loadTime); 
+
+        </script>
 
   <!-- Login Transitions -->
   <div id="ft1">
@@ -375,53 +410,53 @@
           <form>
             <input class="setup__input-text" type="text" name="background" placeholder="sunset on the beach">
         </form>
-
+          
           <h3 class="setup__subheading">Or select some of these themes</h3>
-
+          
           <form class="setup__select-grid">
-
+              
               <input type="checkbox" id="theme01" class="setup__select-grid__checkbox">
               <label for="theme01" class="setup__select-grid__item" style="background-image: url(client/img/thumb01.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cute Doggos</h3>
               </label>
-
+              
               <input type="checkbox" id="theme02" class="setup__select-grid__checkbox">
               <label for="theme02" class="setup__select-grid__item" style="background-image: url(client/img/thumb02.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cityscapes</h3>
               </label>
-
+              
               <input type="checkbox" id="theme03" class="setup__select-grid__checkbox">
               <label for="theme03" class="setup__select-grid__item" style="background-image: url(client/img/thumb03.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Somewhere Nicer</h3>
               </label>
-
+              
               <input type="checkbox" id="theme04" class="setup__select-grid__checkbox">
               <label for="theme04" class="setup__select-grid__item" style="background-image: url(client/img/thumb04.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cars</h3>
               </label>
-
+              
               <input type="checkbox" id="theme05" class="setup__select-grid__checkbox">
               <label for="theme05" class="setup__select-grid__item" style="background-image: url(client/img/thumb05.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Sky High</h3>
               </label>
-
+              
               <input type="checkbox" id="theme06" class="setup__select-grid__checkbox">
               <label for="theme06" class="setup__select-grid__item" style="background-image: url(client/img/thumb06.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Abstract</h3>
               </label>
-
+              
               <input type="checkbox" id="theme07" class="setup__select-grid__checkbox">
               <label for="theme07" class="setup__select-grid__item" style="background-image: url(client/img/thumb07.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Interstellar</h3>
               </label>
-
+              
               <input type="checkbox" id="theme08" class="setup__select-grid__checkbox">
               <label for="theme08" class="setup__select-grid__item" style="background-image: url(client/img/thumb08.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
@@ -448,9 +483,9 @@
 
           <h3 class="setup__subheading">How Degenerate Should the memes be?</h3>
 
-          <input type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
+          <input id="meme-slider" type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
 
-          <p>Peak Degeneracy</p>
+          <p id="meme-level">Standard</p>
 
         </div>
 
@@ -488,23 +523,23 @@
         <h1 class="clock__name">Hi There Arjun!</h1>
         <h2 class="clock__clock"><span class="clock__clock-hours"></span><span class="clock__clock--ticker">:</span><span class="clock__clock-mins"></span><span class="clock__clock--suffix"></span></h2>
         </div>
-
+        
         <div class="clock__right">
         <h3 class="clock__date"></h3>
-        <div class="clock__weather"><h4>81&deg;F - clear</h4></div>
+        <div class="clock__weather"><h4><span id="temp"></span>&deg;F - <span id="words"></span></h4></div>
         </div>
     </section>
-
+      
       <!-- Quote of The Day -->
     <section class="quote" id="dashboard-quote">
         <div class="quote__expand"><i class="material-icons">expand_less</i></div>
         <p class="quote__text">“<span class="qod"></span>” - <span class="qoda"></span></p>
     </section>
-
+      
     <div class="dashboard__content">
-
+        
         <div class="dashboard__collapse"><i class="material-icons">expand_more</i></div>
-
+        
     <!-- Weather Forecast -->
     <section class="weather" id="dashboard-weather">
       <!-- Default City is Orlando -->
@@ -514,8 +549,8 @@
       <div id="weatherImg"></div>
       <!-- temp & description -->
       <div id="description">
-        <div id="temp"><span id="deg">&#8457;</span></div> <!-- degree F symbol -->
-        <div id="words"></div>
+        <div id="tellmp"><span id="deg">&#8457;</span></div> <!-- degree F symbol -->
+        <div id="workkds"></div>
       </div>
 
     </section>
@@ -527,7 +562,7 @@
       <p>Powered by News API</p>
     </section>
 
-
+    
 
     <!-- Horoscope -->
     <section class="horoscope" id="dashboard-horoscope">
@@ -545,7 +580,7 @@
         <h4 class="meme__title">Meme of the day</h4>
       <div id="mod"></div>
     </section>
-
+        
     </div>
   </main>
 
@@ -560,6 +595,9 @@
   <script src="client/js/horoscope.js"></script>
   <script src="client/js/news.js"></script>
   <script src="client/js/array.js"></script>
+    <script>
+        sessionStorage.setItem("visited", true);
+    </script>
 
 </body>
 

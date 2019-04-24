@@ -50,10 +50,45 @@
 
   <!-- Facebook SDK -->
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=404228607028267&autoLogAppEvents=1"></script>
+    
+    <!--Preload JS -->
+    <script src="client/js/preload.js"></script>
 
 </head>
 
 <body>
+    
+    <!-- PRELOADER -->
+        <section class="preload">
+            <div class="preload__container nocursor" id="preloader-content">
+                <div class="n3xt-loader">
+                    <h2>D</h2>
+                    <h2>A</h2>
+                    <h2>S</h2>
+                    <h2>H</h2>
+                </div>
+            </div>
+            
+            <noscript>
+                <h3>Due to the interactive nature of this site, JavaScript is <span>required.</span> Please enable JavaScript or use a modern web browser to continue.</h3>
+            </noscript>
+            
+            <div class="preload__bar">
+                <span class="preload__bar-inner"></span>
+            </div>
+            
+        </section>
+        
+        <script>
+            
+            if (visitedPage) {
+                $(".preload__container").css("display", "none");
+                $(".preload__bar").css("display", "none");
+            }
+            
+            $(".preload__bar-inner").animate({width: "100%"}, loadTime); 
+
+        </script>
 
   <!-- Login Transitions -->
   <div id="ft1">
@@ -448,9 +483,9 @@
 
           <h3 class="setup__subheading">How Degenerate Should the memes be?</h3>
 
-          <input type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
+          <input id="meme-slider" type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
 
-          <p>Peak Degeneracy</p>
+          <p id="meme-level">Standard</p>
 
         </div>
 
@@ -491,7 +526,7 @@
         
         <div class="clock__right">
         <h3 class="clock__date"></h3>
-        <div class="clock__weather"><h4>81&deg;F - clear</h4></div>
+        <div class="clock__weather"><h4><span id="temp"></span>&deg;F - <span id="words"></span></h4></div>
         </div>
     </section>
       
@@ -514,8 +549,8 @@
       <div id="weatherImg"></div>
       <!-- temp & description -->
       <div id="description">
-        <div id="temp"><span id="deg">&#8457;</span></div> <!-- degree F symbol -->
-        <div id="words"></div>
+        <div id="tellmp"><span id="deg">&#8457;</span></div> <!-- degree F symbol -->
+        <div id="workkds"></div>
       </div>
 
     </section>
@@ -560,6 +595,9 @@
   <script src="client/js/horoscope.js"></script>
   <script src="client/js/news.js"></script>
   <script src="client/js/array.js"></script>
+    <script>
+        sessionStorage.setItem("visited", true);
+    </script>
 
 </body>
 

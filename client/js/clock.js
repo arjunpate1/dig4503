@@ -26,19 +26,6 @@ function getCurrentTime(){
     currentTime.weekday = currentTime.raw.getDay();
     currentTime.year = currentTime.raw.getFullYear();
     
-    if (currentTime.minutes < 10) {
-        currentTime.minutes = "0" + currentTime.minutes;
-    }
-    
-    if(currentTime.hours < 12) {
-        currentTime.suffix = "am";
-    }
-    else {
-        currentTime.suffix = "pm";
-    }
-    
-    currentTime.date = daysOfWeek[currentTime.weekday] + ", " + monthsInYear[currentTime.month - 1] + " " + currentTime.day + ", " + currentTime.year;
-    
     if (currentTime.hours >= 4 && currentTime.hours < 12) {
     currentTime.greeting = 'Good Morning';
     }
@@ -54,6 +41,21 @@ function getCurrentTime(){
     else {
         currentTime.greeting = 'Welcome';
     }
+    
+    if (currentTime.minutes < 10) {
+        currentTime.minutes = "0" + currentTime.minutes;
+    }
+    
+    if(currentTime.hours < 12) {
+        currentTime.suffix = "am";
+    }
+    else {
+        currentTime.hours = currentTime.hours - 12;
+        currentTime.suffix = "pm";
+    }
+    
+    currentTime.date = daysOfWeek[currentTime.weekday] + ", " + monthsInYear[currentTime.month - 1] + " " + currentTime.day + ", " + currentTime.year;
+    
 
 }
 

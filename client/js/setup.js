@@ -93,3 +93,32 @@ $(".setup__submit").click(function(){
     $(".dashboard").fadeIn(1000);
     
 });
+
+// Input event Handlers
+
+var memeSlider = document.querySelector('#meme-slider');
+
+
+// use 'change' instead to see the difference in response
+memeSlider.addEventListener('input', function () {
+    
+  var ranking = $("#meme-slider").val();
+    var rankingOutput;
+    
+    if (ranking < 3) {
+        rankingOutput = 'Pretty Lame';
+    }
+    
+    else if (ranking < 5) {
+        rankingOutput = 'You Basic';
+    }
+    else if (ranking < 7) {
+        rankingOutput = "That's more like it"
+    }
+    else {
+        rankingOutput = "Peak Degeneracy"
+    }
+    
+  $("#meme-level").text(rankingOutput);
+    
+}, false);

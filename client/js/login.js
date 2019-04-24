@@ -519,9 +519,12 @@ function welcomeUser(greeting, linked){
                 //window.location.href="../client-portal/index.php";
                 $(".login").css("transform", "translateX(-100%)");
                 $("#ft3").css("transform", "translateY(-100%)");
+                user.first = userInfo.firstName;
+                            user.first = user.first.charAt(0).toUpperCase() + user.first.slice(1);
+                            getCurrentTime();
                 setTimeout(function(){
                     $(".setup").css("transform", "translateX(0)");
-                },1300);
+                },100);
             },1000);
             
         }, 1000);
@@ -634,12 +637,15 @@ function createAccount(firstName, lastName, newEmail, newPassword) {
                         $("#site-subgreeting").fadeOut(500);
                         
                         setTimeout(function(){
-                            window.location.href="../client-portal/index.php";
+                            //window.location.href="../client-portal/index.php";
                             $(".login").css("transform", "translateX(-100%)");
                             $("#ft3").css("transform", "translateY(-100%)");
-                setTimeout(function(){
-                    $(".setup").css("transform", "translateX(0)");
-                },1300);
+                            user.first = userInfo.firstName;
+                            user.first = user.first.charAt(0).toUpperCase() + user.first.slice(1);
+                            getCurrentTime();
+                            setTimeout(function(){
+                                $(".setup").css("transform", "translateX(0)");
+                            },100);
                         },1200);
                         
                     }, 2000);
