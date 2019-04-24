@@ -58,7 +58,7 @@
   <script src="client/js/horoscope.js"></script>
   <script src="client/js/news.js"></script>
   <script src="client/js/horoscope.js"></script>
-
+  <script src="client/js/array.js"></script>
 
 
 </head>
@@ -272,14 +272,14 @@
     <!-- Setup Slide 1 -->
     <div class="setup__slide setup__slide--1">
 
-        <div class="setup__slide-content">
+      <div class="setup__slide-content">
 
-              <h2 class="setup__heading">Welcome to Dash</h2>
-              <h3 class="setup__subheading">Let's get started!</h3>
-              <p>To have the best experience, please answer these questions.</p>
-              <p>And do not worry about your personal data; we take privacy very serious.</p>
+        <h2 class="setup__heading">Welcome to Dash</h2>
+        <h3 class="setup__subheading">Let's get started!</h3>
+        <p>To have the best experience, please answer these questions.</p>
+        <p>And do not worry about your personal data; we take privacy very serious.</p>
 
-        </div>
+      </div>
 
       <button class="setup__next"><i class="material-icons">arrow_forward</i></button>
 
@@ -290,59 +290,59 @@
 
       <div class="setup__slide-content">
 
-          <h2 class="setup__heading">Birthday</h2>
-            <p>We want to be able to congratulate you on your birthday!... And cater to the astrology enthusiasts out there.</p>
+        <h2 class="setup__heading">Birthday</h2>
+        <p>We want to be able to congratulate you on your birthday!... And cater to the astrology enthusiasts out there.</p>
 
-            <form action='#' method='post'>
-              Day: <select id='s_days'>
-                <option value='1'>1</option>
-                <option value='2'>2</option>
-                <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-                <option value='6'>6</option>
-                <option value='7'>7</option>
-                <option value='8'>8</option>
-                <option value='9'>9</option>
-                <option value='10'>10</option>
-                <option value='11'>11</option>
-                <option value='12'>12</option>
-                <option value='13'>13</option>
-                <option value='14'>14</option>
-                <option value='15'>15</option>
-                <option value='16'>16</option>
-                <option value='17'>17</option>
-                <option value='18'>18</option>
-                <option value='19'>19</option>
-                <option value='20'>20</option>
-                <option value='21'>21</option>
-                <option value='22'>22</option>
-                <option value='23'>23</option>
-                <option value='24'>24</option>
-                <option value='25'>25</option>
-                <option value='26'>26</option>
-                <option value='27'>27</option>
-                <option value='28'>28</option>
-                <option value='29'>29</option>
-                <option value='30'>30</option>
-                <option value='31'>31</option>
-              </select> -
-              Month: <select id='s_m'>
-                <option value='1'>January</option>
-                <option value='2'>February</option>
-                <option value='3'>March</option>
-                <option value='4'>April</option>
-                <option value='5'>May</option>
-                <option value='6'>June</option>
-                <option value='7'>July</option>
-                <option value='8'>August</option>
-                <option value='9'>September</option>
-                <option value='10'>October</option>
-                <option value='11'>November</option>
-                <option value='12'>December</option>
-              </select>
-              <input type='button' id='test_z' value='Save'>
-            </form>
+        <form action='#' method='post'>
+          Day: <select id='s_days'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+            <option value='19'>19</option>
+            <option value='20'>20</option>
+            <option value='21'>21</option>
+            <option value='22'>22</option>
+            <option value='23'>23</option>
+            <option value='24'>24</option>
+            <option value='25'>25</option>
+            <option value='26'>26</option>
+            <option value='27'>27</option>
+            <option value='28'>28</option>
+            <option value='29'>29</option>
+            <option value='30'>30</option>
+            <option value='31'>31</option>
+          </select> -
+          Month: <select id='s_m'>
+            <option value='1'>January</option>
+            <option value='2'>February</option>
+            <option value='3'>March</option>
+            <option value='4'>April</option>
+            <option value='5'>May</option>
+            <option value='6'>June</option>
+            <option value='7'>July</option>
+            <option value='8'>August</option>
+            <option value='9'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
+          </select>
+          <input type='button' id='test_z' value='Save'>
+        </form>
       </div>
 
       <button class="setup__next"><i class="material-icons">arrow_forward</i></button>
@@ -355,11 +355,11 @@
     <div class="setup__slide setup__slide--3">
 
       <div class="setup__slide-content">
-          
+
         <h2 class="setup__heading">Weather Location</h2>
 
         <p>If we know where you are, we can tell you how the weather is going to be.</p>
-          
+
           <h3 class="setup__subheading">Enter a City</h3>
         <form action="">
             <input class="setup__input-text" type="text" name="city" placeholder="Winterfell">
@@ -378,14 +378,14 @@
 
       <div class="setup__slide-content">
 
-          <h2 class="setup__heading">Background</h2>
+        <h2 class="setup__heading">Background</h2>
 
         <p>Dash is all about personalization. Tell us what you like and we will make it your new background photo.</p>
-          
+
           <form>
             <input class="setup__input-text" type="text" name="background" placeholder="space">
         </form>
-          
+
         </div>
 
       <button class="setup__next"><i class="material-icons">arrow_forward</i></button>
@@ -399,16 +399,16 @@
 
       <div class="setup__slide-content">
 
-          <h2 class="setup__heading">Memes</h2>
+        <h2 class="setup__heading">Memes</h2>
 
             <p>We all enjoy memes, don't we? Give yourself a comedic relief and tell us what type of memes you prefer. We'll give you a good laugh.</p>
-          
+
           <h3 class="setup__subheading">How Degenerate Should the memes be?</h3>
-          
+
           <input type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
-          
+
           <p>Peak Degeneracy</p>
-          
+
         </div>
 
       <button class="setup__back"><i class="material-icons">arrow_back</i></button>
@@ -421,12 +421,12 @@
     <div class="setup__slide setup__slide--6">
 
       <div class="setup__slide-content">
-        
+
           <h2 class="setup__heading setup__heading--center">All Done!</h2>
-          
+
           <button class="setup__submit">Show me My Dash</button>
 
-        </div>
+      </div>
 
     </div>
 
@@ -464,12 +464,13 @@
 
     <!-- News Section -->
     <section class="news" id="dashboard-news">
-      <div id="news"></div>
+
       <p>Powered by News API</p>
     </section>
 
     <!-- Quote of The Day -->
     <section class="quote" id="dashboard-quote">
+      <p id="qod"></p>
     </section>
 
     <!-- Horoscope -->
@@ -480,6 +481,7 @@
 
     <!-- Meme -->
     <section class="meme" id="dashboard-meme">
+      <div id="mod"></div>
     </section>
 
   </main>
