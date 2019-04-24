@@ -83,7 +83,7 @@
   </div>
 
   <!-- Login Screen -->
-  <section class="login" id="login-page">
+  <section class="login z-1000" id="login-page">
 
     <div class="login__pane">
 
@@ -260,7 +260,7 @@
   </section>
 
   <!-- Setup Page -->
-  <section class="setup" id="setup-page">
+  <section class="setup z-100" id="setup-page">
 
     <!-- Setup Progress Bar -->
     <div class="setup__progress-bar">
@@ -356,13 +356,13 @@
 
       <div class="setup__slide-content">
 
-        <h2>Location</h2>
+        <h2 class="setup__heading">Weather Location</h2>
 
         <p>If we know where you are, we can tell you how the weather is going to be.</p>
 
+          <h3 class="setup__subheading">Enter a City</h3>
         <form action="">
-          City: <input type="text" name="city" id="">
-          <input type="submit" value="Submit">
+            <input class="setup__input-text" type="text" name="city" placeholder="Winterfell">
         </form>
 
       </div>
@@ -382,7 +382,11 @@
 
         <p>Dash is all about personalization. Tell us what you like and we will make it your new background photo.</p>
 
-      </div>
+          <form>
+            <input class="setup__input-text" type="text" name="background" placeholder="space">
+        </form>
+
+        </div>
 
       <button class="setup__next"><i class="material-icons">arrow_forward</i></button>
 
@@ -397,9 +401,15 @@
 
         <h2 class="setup__heading">Memes</h2>
 
-        <p>We all enjoy memes, don't we? Give yourself a comedic relief and tell us what type of memes you prefer. We'll give you a good laugh.</p>
+            <p>We all enjoy memes, don't we? Give yourself a comedic relief and tell us what type of memes you prefer. We'll give you a good laugh.</p>
 
-      </div>
+          <h3 class="setup__subheading">How Degenerate Should the memes be?</h3>
+
+          <input type="range" min="1" max="7" value="4" class="setup__slider" id="myRange">
+
+          <p>Peak Degeneracy</p>
+
+        </div>
 
       <button class="setup__back"><i class="material-icons">arrow_back</i></button>
 
@@ -412,9 +422,9 @@
 
       <div class="setup__slide-content">
 
-        <h2 class="setup__heading">All Done!</h2>
+          <h2 class="setup__heading setup__heading--center">All Done!</h2>
 
-        <button class="setup__submit">Show me My Dash</button>
+          <button class="setup__submit">Show me My Dash</button>
 
       </div>
 
@@ -423,7 +433,7 @@
   </section>
 
   <!-- Dashboard -->
-  <main class="dashboard" id="dashboard-page">
+  <main class="dashboard z-10" id="dashboard-page">
 
     <!-- Settings Page -->
     <section class="settings" id="dashboard-settings">
@@ -450,7 +460,7 @@
 
     <!-- News Section -->
     <section class="news" id="dashboard-news">
-      
+
       <p>Powered by News API</p>
     </section>
 

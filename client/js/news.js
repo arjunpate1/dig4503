@@ -9,9 +9,9 @@ const recievedNews = (newsdata) => {
       const div = document.createElement("div")
       div.className = "news"
       div.innerHTML = `
-			<h2>${article.title}</h2>
-			<img src="${article.urlToImage}"/><br>
-       <a href="${article.url}">Read more</a> `
+			<h2 class="news__title">${article.title}</h2>
+			<img class="news__image" src="${article.urlToImage}"/><br>
+            <a class="news__linke" target="_blank" href="${article.url}">Read more</a> `
       articlesDiv.appendChild(div)
 
     })
