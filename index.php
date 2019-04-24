@@ -375,53 +375,53 @@
           <form>
             <input class="setup__input-text" type="text" name="background" placeholder="sunset on the beach">
         </form>
-          
+
           <h3 class="setup__subheading">Or select some of these themes</h3>
-          
+
           <form class="setup__select-grid">
-              
+
               <input type="checkbox" id="theme01" class="setup__select-grid__checkbox">
               <label for="theme01" class="setup__select-grid__item" style="background-image: url(client/img/thumb01.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cute Doggos</h3>
               </label>
-              
+
               <input type="checkbox" id="theme02" class="setup__select-grid__checkbox">
               <label for="theme02" class="setup__select-grid__item" style="background-image: url(client/img/thumb02.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cityscapes</h3>
               </label>
-              
+
               <input type="checkbox" id="theme03" class="setup__select-grid__checkbox">
               <label for="theme03" class="setup__select-grid__item" style="background-image: url(client/img/thumb03.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Somewhere Nicer</h3>
               </label>
-              
+
               <input type="checkbox" id="theme04" class="setup__select-grid__checkbox">
               <label for="theme04" class="setup__select-grid__item" style="background-image: url(client/img/thumb04.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Cars</h3>
               </label>
-              
+
               <input type="checkbox" id="theme05" class="setup__select-grid__checkbox">
               <label for="theme05" class="setup__select-grid__item" style="background-image: url(client/img/thumb05.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Sky High</h3>
               </label>
-              
+
               <input type="checkbox" id="theme06" class="setup__select-grid__checkbox">
               <label for="theme06" class="setup__select-grid__item" style="background-image: url(client/img/thumb06.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Abstract</h3>
               </label>
-              
+
               <input type="checkbox" id="theme07" class="setup__select-grid__checkbox">
               <label for="theme07" class="setup__select-grid__item" style="background-image: url(client/img/thumb07.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
                   <h3>Interstellar</h3>
               </label>
-              
+
               <input type="checkbox" id="theme08" class="setup__select-grid__checkbox">
               <label for="theme08" class="setup__select-grid__item" style="background-image: url(client/img/thumb08.jpg)">
                   <span class="setup__select-grid__item-hello-darkness"></span>
@@ -488,23 +488,23 @@
         <h1 class="clock__name">Hi There Arjun!</h1>
         <h2 class="clock__clock"><span class="clock__clock-hours"></span><span class="clock__clock--ticker">:</span><span class="clock__clock-mins"></span><span class="clock__clock--suffix"></span></h2>
         </div>
-        
+
         <div class="clock__right">
         <h3 class="clock__date"></h3>
         <div class="clock__weather"><h4>81&deg;F - clear</h4></div>
         </div>
     </section>
-      
+
       <!-- Quote of The Day -->
     <section class="quote" id="dashboard-quote">
         <div class="quote__expand"><i class="material-icons">expand_less</i></div>
         <p class="quote__text">“<span class="qod"></span>” - <span class="qoda"></span></p>
     </section>
-      
+
     <div class="dashboard__content">
-        
+
         <div class="dashboard__collapse"><i class="material-icons">expand_more</i></div>
-        
+
     <!-- Weather Forecast -->
     <section class="weather" id="dashboard-weather">
       <!-- Default City is Orlando -->
@@ -527,7 +527,7 @@
       <p>Powered by News API</p>
     </section>
 
-    
+
 
     <!-- Horoscope -->
     <section class="horoscope" id="dashboard-horoscope">
@@ -545,7 +545,7 @@
         <h4 class="meme__title">Meme of the day</h4>
       <div id="mod"></div>
     </section>
-        
+
     </div>
   </main>
 

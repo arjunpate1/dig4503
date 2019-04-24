@@ -1,5 +1,19 @@
   $(document).ready(function(){
+
+    // var units;
+    //
+    // if (user.preferredUnit == farenheit){
+    //   units = "units=imperial";
+    //   $("#deg").html("&#8457;");
+    // }
+    // if (user.preferredUnit == celcius){
+    //   units = "units=metric";
+    //   $("#deg").html("&#8451;");
+    // }
+
+
     $.ajax({
+      //url:"https://api.openweathermap.org/data/2.5/find?q="+user.city+"&"+units+"&APPID=a287ec139e178c4da981c95590c41a12",
       url:"https://api.openweathermap.org/data/2.5/find?q=orlando&units=imperial&APPID=a287ec139e178c4da981c95590c41a12",
       method: 'POST',
       success: function(data){
@@ -53,4 +67,3 @@
       }
     })
   })
-
