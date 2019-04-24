@@ -62,19 +62,19 @@
 
         <!-- Login Screen -->
         <section class="login" id="login-page">
-            
+
             <form class="login-form">
-                     
+
                 <!-- Intro Slide -->
                 <div class="login-form__slide" id="lsa">
-                        
+
                     <h1 class="login-form__slide-title">Hi There!</h1>
 
                 </div>
-                     
+
                 <!-- Slide 1 -->
                 <div class="login-form__slide" id="ls1">
-                        
+
                     <h1 class="login-form__slide-title">Welcome to <span>N3XT</span>WEB</h1>
 
                     <h2 class="login-form__slide-subtitle">Enter Your Email To Get Started</h2>
@@ -129,19 +129,19 @@
                     <p id="confirm_new_password_error"></p>
                     <button type="submit" class="login-form__submit">Create Account</button>
                 </div>
-                     
+
                      <!-- Slide 4 -->
                 <div class="login-form__slide" id="ls4">
                     <h1 class="login-form__slide-title-alt">Looks Like You Already Have An Account!</h1>
                     <h2 class="login-form__slide-subtitle" id="whichaccount"></h2>
-                        
+
                     <input type="password" name="link-password" placeholder="enter your password">
                     <p id="link-password_error"></p>
                     <button type="submit" class="login-form__submit">Confirm</button>
                 </div>
-                     
+
             </form>
-          
+
         </section>
 
         <!-- Setup Page -->
