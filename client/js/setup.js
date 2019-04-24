@@ -29,6 +29,7 @@ function changeSetupSlide(direction) {
         console.log("next slide " + setupSlide);
         
         $(".setup__slide--" + setupSlide).fadeIn(500);
+        $(".setup__slide--" + setupSlide).css("display", "flex");
         
         $(".setup__progress-bar--inner").css("width", "calc(" + (16.66 * setupSlide) + "%)");
         

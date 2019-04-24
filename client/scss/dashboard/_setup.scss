@@ -3,9 +3,10 @@
     width: 100vw;
     overflow: hidden;
     position: absolute;
-    background-color: $white;
+    background-color: $primary;
     //transform: translateX(100vw);
     transition: all 1.3s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    color: $white;
     
     &__progress-bar {
         
@@ -21,7 +22,7 @@
             // Inner Style Goes Here
             height: 100%;
             width: 16.66%;
-            background-color: $primary-dk;
+            background-color: rgba($white, .4);
             
             transition: $smooth;
             
@@ -37,6 +38,9 @@
         top: 0;
         left: 0;
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         &--1 {
             
@@ -83,6 +87,41 @@
     &__heading {
         
         
+        
+    }
+    
+    &__content {
+        
+    }
+    
+    &__next,
+    &__back {
+        
+        position: absolute;
+        display: block;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        cursor: pointer;
+        
+        i {
+            
+            font-size: 3.5rem;
+            @include centerBox;
+            
+        }
+        
+    }
+    
+    &__next {
+        
+        right: 5vw;
+        
+    }
+    
+    &__back {
+        
+        left: 5vw;
         
     }
     
