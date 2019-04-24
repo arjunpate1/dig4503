@@ -1,0 +1,52 @@
+.clock {
+    width: 30vw;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 15vw);
+    transform: translateY(-50%);
+    
+    color: $white;
+    
+    &__name {
+        
+        font-size: $font-xl;
+        
+    }
+    
+    &__clock {
+        
+        font-size: $font-lg;
+        letter-spacing: .3rem;
+        margin-bottom: 2rem;
+        
+        &--suffix {
+            
+            font-size: $font-sm;
+            text-transform: uppercase;
+            padding-left: .5rem;
+            
+        }
+        
+    }
+    
+    &__date {
+        
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .4rem;
+        margin-bottom: 1rem;
+        
+    }
+    
+    &__weather {
+        
+        h4 {
+            
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            
+        }
+        
+    }
+}
