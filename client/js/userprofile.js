@@ -1,4 +1,5 @@
 var user = {
+    loggedIn: false,
   first: undefined,
   last: undefined,
   username: undefined,
@@ -10,5 +11,8 @@ var user = {
   facebook: undefined,
   sign: undefined,
   city: undefined,
+    birthday: undefined,
+    meme: undefined,
+    background: undefined,
   preferredUnit: undefined,
 };
