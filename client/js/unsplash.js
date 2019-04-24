@@ -1,6 +1,6 @@
 var unsplashSearch = {
     APIkey: 'ebffa201a7d10119ea7b232582d312671b379691e32538daa3484790e959eda7',
-    query: 'earth',
+    query: 'aerial',
     quantity: 30, // MAX of 30
     page: 1,
     status: false,
@@ -61,7 +61,7 @@ function searchUnsplash() {
 
 $(document).ready(function(){
     
-    //searchUnsplash();
+    searchUnsplash();
     
 });
 

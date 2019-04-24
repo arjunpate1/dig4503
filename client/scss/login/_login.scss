@@ -3,8 +3,10 @@
     grid-template-columns: 60% 40%;
     height: 100vh;
     width: 100vw;
+    transition: all 1.3s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    z-index: 10000000000;
     
-    display: none;
+    //display: none;
     
     @include respond(tab-port) {
         grid-template-columns: auto;

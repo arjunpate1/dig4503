@@ -1,3 +1,8 @@
+@keyframes tick-clock {
+  to {
+    visibility: hidden;
+  }
+}
 .clock {
     width: 30vw;
     text-align: center;
@@ -5,6 +10,9 @@
     top: 40%;
     left: calc(50% - 15vw);
     transform: translateY(-50%);
+    transition: all .6s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    z-index: 10000;
+    pointer-events: none;
     
     color: $white;
     
@@ -28,6 +36,10 @@
             
         }
         
+        &--ticker {
+            animation: tick-clock 1s steps(2, start) infinite;
+        }
+        
     }
     
     &__date {
@@ -49,4 +61,5 @@
         }
         
     }
+    
 }

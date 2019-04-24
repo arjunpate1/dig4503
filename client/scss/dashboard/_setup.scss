@@ -3,8 +3,10 @@
     width: 100vw;
     overflow: hidden;
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: $primary;
-    //transform: translateX(100vw);
+    transform: translateX(100vw);
     transition: all 1.3s cubic-bezier(0.860, 0.000, 0.070, 1.000);
     color: $white;
     
@@ -67,6 +69,10 @@
             // Slide 4 Styles
             display: none;
             
+            input {
+                margin-bottom: 3rem;
+            }
+            
         }
         
         &--5 {
@@ -109,7 +115,7 @@
     
     &__slide-content {
         
-        width: 35vw;
+        width: 40vw;
         
         p {
             
@@ -147,6 +153,10 @@
                 color: rgba($white, .5);
                 font-size: $font-xxs;
             }
+            
+        }
+        
+        &-select {
             
         }
         
@@ -197,6 +207,8 @@
         width: 7rem;
         border-radius: 50%;
         cursor: pointer;
+        border:none;
+        background-color: $white;
         
         i {
             
@@ -228,14 +240,105 @@
         margin: 0 auto;
         text-transform: uppercase;
         border: none;
-        letter-spacing: .2rem;
+        letter-spacing: .4rem;
         cursor: pointer;
         transition: $normal;
+        background-color: $white;
         
         &:hover {
             opacity: .8;
         }
         
+    }
+    
+    &__select-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: calc(25% - (6rem / 4)) calc(25% - (6rem / 4)) calc(25% - (6rem / 4)) calc(25% - (6rem / 4));
+        grid-gap: 2rem;
+        margin-top: 3rem;
+        
+        &__checkbox {
+            
+            display: none;
+            
+            &:checked + .setup__select-grid__item {
+                
+                outline: 3px solid $white;
+                background-size: 110%;
+                
+                .setup__select-grid__item-hello-darkness {
+                    
+                    opacity: .5;
+                    
+                }
+                
+                h3 {
+                    
+                    opacity: 1;
+                    z-index: 10;
+                    
+                }
+                
+            }
+            
+        }
+        
+        &__item {
+            
+            display: block;
+            height: 15rem;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            transition: $normal;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            outline: 3px solid transparent;
+            
+            h3 {
+                
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+                font-size: 80%;
+                padding: 1rem;
+                opacity: 0;
+                transition: $normal;
+                text-align: center;
+                display: block;
+                
+            }
+            
+            &-hello-darkness {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $black;
+                opacity: 0;
+                transition: $normal;
+                //z-index: 1;
+            }
+            
+            &:hover {
+                background-size: 110%;
+                
+                .setup__select-grid__item-hello-darkness {
+                    
+                    opacity: .5;
+                    
+                }
+                
+                h3 {
+                    
+                    opacity: 1;
+                    z-index: 10;
+                    
+                }
+            }
+        }
     }
     
 }

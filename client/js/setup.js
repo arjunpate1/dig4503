@@ -90,5 +90,6 @@ $(".setup__back").click(function(){
 $(".setup__submit").click(function(){
     
     $(".setup").css("transform", "translateX(-100vw)");
+    $(".dashboard").fadeIn(1000);
     
 });

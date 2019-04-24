@@ -7,11 +7,11 @@ const recievedNews = (newsdata) => {
 
 			//Here we create and add html elements to our html file
       const div = document.createElement("div")
-      div.className = "news"
+      div.className = "news__article"
       div.innerHTML = `
 			<h2 class="news__title">${article.title}</h2>
 			<img class="news__image" src="${article.urlToImage}"/><br>
-            <a class="news__linke" target="_blank" href="${article.url}">Read more</a> `
+            <a class="news__link" target="_blank" href="${article.url}">Read more</a> `
       articlesDiv.appendChild(div)
 
     })
@@ -22,23 +22,3 @@ const recievedNews = (newsdata) => {
 fetch(url)
   .then(response => response.json())
   .then(recievedNews)
-
-
-
-
-
-/*
-
-
-var url = 'https://newsapi.org/v2/top-headlines?' +
-  'country=us&' +
-  'apiKey=923b8e9de1c24266a13f2430884ba723';
-var req = new Request(url);
-fetch(req)
-  .then(function(response) {
-    console.log(response.json());
-
-  })
-$('#news').html(response.json());
-
-*/

@@ -9,11 +9,13 @@ $.ajax({
       return (day > last_day[month]) ? zodiac[month * 1 + 1] : zodiac[month];
     }
 
-    document.getElementById('test_z').onclick = function() {
+    /*document.getElementById('test_z').onclick = function() {
 
       var sign = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
-      var signResult = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
+        
+        //var signResult = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
 
+    
       var horoscope = result.dailyhoroscope[signResult]; //testing
       console.log(result);
 
@@ -21,7 +23,21 @@ $.ajax({
       $("#horoscope").html(horoscope); // this displays the result for the sign
 
       console.log(result); //this returns the whole object
-    };
+    }; */
+      
+    var signResult = zodiac(30, 5);
+    var sign = zodiac(30, 5);
+        
+    //var signResult = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
+
+    
+      var horoscope = result.dailyhoroscope[signResult]; //testing
+      console.log(result);
+
+      $("#sign").html(sign); // this displays the sign
+      $("#horoscope").html(horoscope); // this displays the result for the sign
+
+      console.log(result); //this returns the whole object
   },
   error: function(jqXHR, textStatus, errorThrown) {
     console.log(jqXHR);
