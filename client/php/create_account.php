@@ -14,8 +14,13 @@
         $method = 1;
         $google = 0;
         $facebook = 0;
+        $setup = false;
+        $month = 0;
+        $day = 0;
+        $meme = 4;
+        $background = 'aerial';
         
-        $sql = "INSERT INTO dreamslogin (first,last,email,pass,url,method,google,facebook) VALUES('$first','$last','$email','$password','$url','$method','$google','$facebook')";
+        $sql = "INSERT INTO dreamslogin (first,last,email,pass,url,method,google,facebook,setup,month,day,meme,city,background) VALUES('$first','$last','$email','$password','$url','$method','$google','$facebook','$setup','$month','$day','$meme','$city','$background')";
         mysqli_query($connection, $sql);
         
         $_SESSION['logged_in'] = true;
@@ -23,6 +28,12 @@
         $_SESSION['last'] = $last;
         $_SESSION['email'] = $email;
         $_SESSION['url'] = $url;
+        $_SESSION['setup'] = $setup;
+        $_SESSION['month'] = $month;
+        $_SESSION['day'] = $day;
+        $_SESSION['meme'] = $meme;
+        $_SESSION['city'] = $city;
+        $_SESSION['background'] = $background;
 		
 		echo "success";
         

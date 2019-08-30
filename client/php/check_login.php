@@ -20,11 +20,23 @@
             $_SESSION['last'] = $row[2];
             $_SESSION['email'] = $row[3];
             $_SESSION['url'] = $row[5];
+            $_SESSION['setup'] = $row[9];
+            $_SESSION['month'] = $row[10];
+            $_SESSION['day'] = $row[11];
+            $_SESSION['meme'] = $row[12];
+            $_SESSION['city'] = $row[13]
+            $_SESSION['background'] = $row[14];
             
             
             $details = new \stdClass();
             $details->first = $row[1];
             $details->url = $row[5];
+            $details->setup = $row[9];
+            $details->month = $row[10];
+            $details->day = $row[11];
+            $details->meme = $row[12];
+            $details->city = $row[13];
+            $details->background = $row[14];
             
             $myJSON = json_encode($details);
             
